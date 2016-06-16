@@ -34,6 +34,7 @@ args+=( -Ddw.ui.baseUrl="${SINGULARITY_UI_BASE:=/singularity}" )
 [[ ! ${SINGULARITY_SMTP_PASSWORD:-} ]] || args+=( -Ddw.smtp.password="${SINGULARITY_SMTP_PASSWORD}" )
 [[ ! ${SINGULARITY_SMTP_HOST:-} ]] || args+=( -Ddw.smtp.host="${SINGULARITY_SMTP_HOST}" )
 [[ ! ${SINGULARITY_SMTP_PORT:-} ]] || args+=( -Ddw.smtp.port="${SINGULARITY_SMTP_PORT}" )
+[[ ! ${SINGULARITY_SMTP_FROM:-} ]] || args+=( -Ddw.smtp.from="${SINGULARITY_SMTP_FROM}" )
 
 [[ ! ${SINGULARITY_PERSIST_HISTORY_EVERY_SECONDS:-} ]] || args+=( -Ddw.persistHistoryEverySeconds="${SINGULARITY_PERSIST_HISTORY_EVERY_SECONDS}" )
 
